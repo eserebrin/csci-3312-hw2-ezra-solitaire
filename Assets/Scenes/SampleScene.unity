@@ -824,7 +824,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 108b80fd47337418998bff80d5baa996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardFaces: []
+  cardFaces:
+  - {fileID: 21300000, guid: 7aa5643f475bd493d8e5eff1d37a8dc8, type: 3}
+  - {fileID: 21300000, guid: 77b282fa38ea140c5bd5f6c8fa218b1a, type: 3}
+  - {fileID: 21300000, guid: 600feb9c0cf374d5183480461b8201bd, type: 3}
+  - {fileID: 21300000, guid: 3dbac49e0680d4c31827c09488c4f8c4, type: 3}
+  - {fileID: 21300000, guid: 463bc6b3a96904c798dd8f31e57ec478, type: 3}
+  - {fileID: 21300000, guid: b89602c97e9564d7681db8c4cd5f6c3b, type: 3}
+  - {fileID: 21300000, guid: 10db163845dd241519ae39ea068c0d8d, type: 3}
+  - {fileID: 21300000, guid: c58cd775fc8a24a59874548ad2a608ce, type: 3}
+  - {fileID: 21300000, guid: 823e0a7abd9e746dc94685b284e40a61, type: 3}
+  - {fileID: 21300000, guid: 097130952a33742d688cbd411afbfa81, type: 3}
+  - {fileID: 21300000, guid: c920ef59e10bf41adb481125d3713d78, type: 3}
+  - {fileID: 21300000, guid: c1493d256d4074896b12e59b3b8f16f7, type: 3}
+  - {fileID: 21300000, guid: 8703c194faedb4913b3cbacabe6b35f1, type: 3}
+  - {fileID: 21300000, guid: 551081b95a7a14ef9ac15810b6ae33ff, type: 3}
+  - {fileID: 21300000, guid: 842de297de7dd43aa9f16320b138db12, type: 3}
+  - {fileID: 21300000, guid: 96d5505590ef14cc2a6121167f6e289e, type: 3}
+  - {fileID: 21300000, guid: 4c404b2fa76a240e68c0f93d96d123bd, type: 3}
+  - {fileID: 21300000, guid: 5c4681b5c6666480da9304840cc12108, type: 3}
+  - {fileID: 21300000, guid: df6ec61d0bd5447a196177e8e6a76d30, type: 3}
+  - {fileID: 21300000, guid: 9b0c3f0f152e346e18e26bc379dd9269, type: 3}
+  - {fileID: 21300000, guid: e9a9ba2e6d7d44752b122babdbabccae, type: 3}
+  - {fileID: 21300000, guid: 122666a09322b4254a396a05c31ba84d, type: 3}
+  - {fileID: 21300000, guid: fa13149933d504184b122703684de30c, type: 3}
+  - {fileID: 21300000, guid: 9e40eb80b94c34a93b3b59756492f5a5, type: 3}
+  - {fileID: 21300000, guid: b652a96e417d84706b676129cc8d58c8, type: 3}
+  - {fileID: 21300000, guid: f20ac2cd697bb45b0b54a9e364c116c2, type: 3}
+  - {fileID: 21300000, guid: 3c836ba5edd9843798f81d83f3efdde7, type: 3}
+  - {fileID: 21300000, guid: ac96671ca322d4562943c5a0f65eef33, type: 3}
+  - {fileID: 21300000, guid: 8f3178b5c98fb4ecf96bc99a88b18f74, type: 3}
+  - {fileID: 21300000, guid: ddebb65d4de40453796ebccde67c56f4, type: 3}
+  - {fileID: 21300000, guid: a1c5b0fea293d4c618e4acc5af594369, type: 3}
+  - {fileID: 21300000, guid: b22f4a98ce24f48f6893ee6d2b154cba, type: 3}
+  - {fileID: 21300000, guid: 811b56d72f32d4ab19397d2fbb3e4534, type: 3}
+  - {fileID: 21300000, guid: a6fb1f260bd1c4b409042914ee9b124a, type: 3}
+  - {fileID: 21300000, guid: c2907d508dce948e9adc2c729896a9bd, type: 3}
+  - {fileID: 21300000, guid: c22c1efc5cf8448cbb7032bee7da5c92, type: 3}
+  - {fileID: 21300000, guid: 0b5a5e2a75bb44ec9bcc358cb7cb8e97, type: 3}
+  - {fileID: 21300000, guid: 30399f3ef54ee4876afdc055075435b5, type: 3}
+  - {fileID: 21300000, guid: 99ee06c97314b4a94a91230b31953274, type: 3}
+  - {fileID: 21300000, guid: 94ba14f157a2a4db19a9732a59fc36a5, type: 3}
+  - {fileID: 21300000, guid: 298195d8ad2fd4ebfa17feb839d7de8b, type: 3}
+  - {fileID: 21300000, guid: f3770a0bca46e4e4aa647b59c98642e1, type: 3}
+  - {fileID: 21300000, guid: adf4088886c7c41c1be40a26153bb16a, type: 3}
+  - {fileID: 21300000, guid: ee65f07a82684433784ffa1b34bdfcb8, type: 3}
+  - {fileID: 21300000, guid: b35fe9705e66744789851a3b85fb8857, type: 3}
+  - {fileID: 21300000, guid: 5b13d2acaca0a4e7ea6be05b8e88ef51, type: 3}
+  - {fileID: 21300000, guid: 45223fedeefc540b2b66dcc928509f04, type: 3}
+  - {fileID: 21300000, guid: 14300123db84c4520b1235664a06018b, type: 3}
+  - {fileID: 21300000, guid: c21f37354444143879b4ac23c83600b6, type: 3}
+  - {fileID: 21300000, guid: eee3d06dc206f44f185771b86e04988a, type: 3}
+  - {fileID: 21300000, guid: ffe661706490045d8b092c895573f6dd, type: 3}
+  - {fileID: 21300000, guid: abe5040a7bd2446ea8a495dcea022dcf, type: 3}
   cardPrefab: {fileID: 1181082195447388688, guid: 94f147984ae144d61821c41d0d10b7da, type: 3}
 --- !u!4 &997826961
 Transform:

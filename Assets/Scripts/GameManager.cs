@@ -4,21 +4,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static string[] suits = new string[] {"C", "D", "H", "S"};
-    public static string[] values = new string[] {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
-
     public Sprite[] cardFaces;
 	public GameObject cardPrefab;
 
-    private GameObject[] deck = new GameObject[52];
+    private GameObject[] deck;
 
     // Start is called before the first frame update
     void Start() {
-       deck = GenerateDeck();
-    //    Shuffle(deck);
-       foreach (GameObject card in deck) {
-            print(card.name);
-       }
+       Shuffle(cardFaces);
+       deck = GenerateDeck(GenerateCardNames());
     }
 
     // Update is called once per frame
@@ -26,17 +20,32 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public GameObject[] GenerateDeck() {
-        GameObject[] newDeck = new GameObject[52];
+    public string[] GenerateCardNames() {
+        string[] suits = new string[] {"C", "D", "H", "S"};
+        string[] values = new string[] {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
+        string[] cardNames = new string[52];
         int i = 0;
         foreach (string s in suits) {
             foreach (string v in values) {
-                GameObject newCard = Instantiate(cardPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-                newCard.name = v + s;
-                // newCard.addComponent<Sprite>(cardFaces[i]);
-                deck[i] = newCard;
-                i++;
+                cardNames[i++] = s + v;
             }
+        }
+        Shuffle(cardNames);
+        return cardNames;
+    }
+
+    public GameObject[] GenerateDeck(string[] cardNames) {
+        GameObject[] newDeck = new GameObject[52];
+        float x = -8F;
+        float z = 0F;
+        int i = 0;
+        foreach (string s in cardNames) {
+            x += 0.3F;
+            z -= 0.01F;
+            GameObject card = Instantiate(cardPrefab, new Vector3(x, 0, z), Quaternion.identity);
+            card.name = s;
+            SpriteRenderer sr = card.GetComponent<SpriteRenderer>();
+            sr.sprite = cardFaces[i++];
         }
         return newDeck;
     }
@@ -44,7 +53,8 @@ public class GameManager : MonoBehaviour
     // Shuffling code taken from https://stackoverflow.com/questions/273313/randomize-a-listt
     public static void Shuffle<T>(IList<T> list)  
     {  
-        System.Random random = new System.Random();
+        int seed = 696969; // Seed the random number generator so deck and cardFaces are in same order.
+        System.Random random = new System.Random(seed);
         int n = list.Count;  
         while (n > 1) {  
             n--;  
@@ -54,11 +64,4 @@ public class GameManager : MonoBehaviour
             list[n] = value;  
         }  
     }
-
-    // public static void DealCards() {
-    //     foreach (string card in deck) {
-    //         GameObject newCard = new GameObject();
-    //         // newCard.name = card;
-    //     }
-    // }
 }
